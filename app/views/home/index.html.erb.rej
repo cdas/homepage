@@ -1,0 +1,26 @@
+diff a/app/views/home/index.html.erb b/app/views/home/index.html.erb	(rejected hunks)
+@@ -1,5 +1,14 @@
+-<h1>Home#index</h1>
+-<p>Find me in app/views/home/index.html.erb</p>
++<h1>Christoph Daseking</h1>
++<p>Contact and find me here:
++	<ul>
++	<li>Email:</li>
++	<li>Twitter</li>
++	<li>Facebook</li>
++	<li>Xing</li>
++	<li>Linkedin</li>
++	</ul>
++</p>
++<!-- Dynamic Content needs to be done later!
+ <div class="content" style="border:2px">
+ <% @contents.each do |content| %>
+ <h2>
+@@ -9,4 +18,5 @@
+ <%= content.data %>
+ </p>
+ <% end %>
+-</div>
+\ No newline at end of file
++</div> -->
++

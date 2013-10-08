@@ -1,0 +1,36 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+	color: black;
+	background-color: white;
+	
+	
+}
+
+div.page {
+	text-align: center;
+	
+}
+div.doc {
+	float: center;
+	text-align: center;
+}
+div.footer-links {
+	border-top: 1px;
+	border-top-color: lightgrey;
+	border-top-style: solid;
+	
+	li {
+		display: inline;
+		padding-right: 10px;
+	}
+	
+	a {
+		color: grey;
+		text-decoration: none;
+		cursor: auto;
+		focud: underline;
+	}
+}

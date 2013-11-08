@@ -14,28 +14,29 @@
         <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+        <script src="js/main.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
-        <!-- Add your site or application content here -->
-        <div id="wrapper" class="center-block">
-            <div id="name" class="content">
-                <h1>Christoph Daseking</h1>
-                <p>Email: <a href="mailto:cdas@habmalnefrage.de">cdas@habmalnefrage.de</a></p>
-                <a href="http://twitter.com/cdas31">Twitter</a>
+        <div id="main" class="content">
+            <h1>Christoph Daseking</h1>
+            <!-- Add your site or application content here -->
+            <div ng-controller="LinksCtrl" id="wrapper" class="center-block">
+                    <p ng-repeat="link in links">
+                        <a href="{{link.url}}" class="link-{{link.type}}"> {{link.name}} </a>
+                    </p>
             </div>
-            <p>Impressum</p>
-            <p>Created with html5boilerplate</p>
+        </div>
+
+        <div id="footer" class="content">
+            Created by cdas
         </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/bootstrap.min.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
 
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
